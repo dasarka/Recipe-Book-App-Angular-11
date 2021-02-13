@@ -1,0 +1,11 @@
+<div class="row">
+    <div class="col-md-5 col-12">
+        <app-recipe-list></app-recipe-list>
+    </div>
+    <div class="col-md-6 offset-md-1 col-12 my-3">
+        <app-recipe-detail *ngIf="selectedRecipe; else InfoText" [recipe]="selectedRecipe"></app-recipe-detail>
+        <ng-template #InfoText>
+            <p class="bg-warning font-weight-bold m-5 p-2 text-center">Please select a Recipe !</p>
+        </ng-template>
+    </div>
+</div>

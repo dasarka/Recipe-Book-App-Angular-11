@@ -1,0 +1,11 @@
+<div class="row border-bottom">
+    <div class="col-12 my-3 text-right">
+        <button class="btn btn-primary shadow">New Recipe</button>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
+        <app-recipe-item *ngFor="let recipeEl of recipes; let odd = odd" [recipe]="recipeEl">
+        </app-recipe-item>
+    </div>
+</div>

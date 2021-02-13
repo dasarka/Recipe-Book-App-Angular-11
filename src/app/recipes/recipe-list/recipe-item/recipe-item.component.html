@@ -1,0 +1,10 @@
+<a href="#" class="row my-2 py-2 rounded shadow-sm text-decoration-none" (click)="onSelect(recipe)">
+    <div class=" col-9">
+        <h4 class="text-monospace text-primary font-italic">{{recipe.name}}</h4>
+        <p class="text-monospace text-muted">{{recipe.description}}</p>
+    </div>
+    <span class="col-3">
+        <img [src]="recipe.imagePath" alt="{{ recipe.name}}" class="img-responsive shadow rounded-circle"
+            style="height: 50px; width: 50px">
+    </span>
+</a>

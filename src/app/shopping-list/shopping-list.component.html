@@ -1,0 +1,10 @@
+<div class="row">
+    <div class="col-12">
+        <app-shopping-edit></app-shopping-edit>
+        <a href="#" class="bg-primary m-2 p-2 rounded shadow text-decoration-none text-white"
+            *ngFor="let ingredient of ingredients">
+            {{ingredient.name}}
+            <span class="badge badge-pill badge-success shadow">{{ ingredient.amount | currency:'INR' }}</span>
+        </a>
+    </div>
+</div>
